@@ -59,7 +59,7 @@ RUN python3 -m ensurepip \
 #
 # Clone repo and prepare working directory
 #
-RUN git clone 'https://github.com/corsicanu/tgbot.git' /root/tgbot/
+RUN git clone 'https://github.com/Infinity1231/tgbot.git' /root/tgbot/
 RUN mkdir /root/tgbot/bin/
 WORKDIR /root/tgbot/
 
