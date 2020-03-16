@@ -44,9 +44,9 @@ def status(bot: Bot, update: Update):
     user_id = update.effective_user.id
     reply = "*System Status:* operational\n\n"
     reply += "*Python version:* "+python_version()+"\n"
-    if user_id in SUDO_USERS or user_id in SUPPORT_USERS or user_id == OWNER_ID:
-        pingSpeed = pingme()
-        reply += "*Ping speed:* "+str(pingSpeed)+"ms\n"
+    #if user_id in SUDO_USERS or user_id in SUPPORT_USERS or user_id == OWNER_ID:
+    #    pingSpeed = pingme()
+    #    reply += "*Ping speed:* "+str(pingSpeed)+"ms\n"
     reply += "*CAS API version:* "+str(cas.vercheck())+"\n"
     reply += "*GitHub API version:* "+str(git.vercheck())+"\n"
     update.effective_message.reply_text(reply, parse_mode=ParseMode.MARKDOWN)
